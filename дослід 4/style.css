@@ -1,0 +1,143 @@
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+h2{
+	width: 100%;
+	text-align: center;
+}
+p{margin: 0;
+padding: 0;}
+
+#leftBlock{
+	width:900px;
+	height : 700px;
+	display: block;
+	position: absolute;
+	float:left;
+}
+
+.rightBlock{
+	width: 500px;
+	height: 700px;
+	margin-right: 40px;
+	position: relative;
+	float: right;
+	display: block;
+}
+
+h3{
+	width: 500px;
+	text-align: center;
+}
+
+.marginBlock{
+	position: absolute;
+	display: block;
+	left: 150;
+	bottom: 25;
+}
+
+.marginBlock>p{
+	padding-left: 60px;
+	float: left;
+	position: relative;
+}
+
+
+.uzv{
+	margin-top: 100px;
+	margin-left: 10px;
+	width: 100px;
+	border: solid 2px blue;
+	float: left;
+	visibility: hidden;
+}
+
+.uzv>p{
+	text-align: center;
+}
+
+.sUpp{
+	height: 0;
+	width: 0;
+	padding: 0;
+	margin: -10px;
+	border: 20px solid transparent;	
+	border-bottom: 20px solid green;
+	background: none;
+}
+
+.sDown{
+	width: 0px;
+	height: 0px;
+	margin-top: 10px;
+	padding: 0;
+	border: 20px solid transparent;	
+	border-top: 20px solid blue;
+	background: none;
+}
+
+.ps{
+	width: 40px;
+	height: 40px;
+	margin: 1px;
+	border: 2px solid black;
+}
+#inNumber{
+	margin-top: -70px;
+	margin-right: 5px;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border: 2px solid black;
+	font-size: 35px;
+}
+
+input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+#picture{
+	height: inherit;
+}
+
+svg{
+	width: 670px;
+	height: 650;
+	float: left;
+	border: 1px solid green;
+}
+
+.ampermetr{
+	width: 100px;
+	height: 100px;
+	margin-top: 100px;
+	margin-right: 5px;
+	border: solid 2px blue;
+	float: left;
+	visibility: hidden;
+}
+
+#outNumber{
+	margin-right: 30px;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border: 2px solid black;
+	font-size: 35px;
+	text-align: center;
+}
+
+#invisibleAll, #invisible, #fixContact, #dur0{
+	visibility: hidden;
+}
+
+#description{
+	padding: 5px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<html>
+	<head>
+		<title>напівпровідниковий тріод</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+		<header>
+			<h2>Демонстрація роботи польового транзистора з ізольованим затвором</h2>
+			<p>Дослід 2</p>
+		</header>
+		<main>
+			<div id="leftBlock">
+				<div id="picture">
+					<div class="uzv" id="invizU">
+						<p>U<sub>з</sub>, В</p>
+						<p class="ps"><input type="button" onclick="pluss()" class="sUpp"></p>
+						<p class="ps"><input type="button" onclick="mines()"class="sDown"></p>
+						<p id="inNumber">0</p>
+					</div>
+
+					<svg src="" id="box" width="670" height="600" viewBox="0 0 670 600" >
+						
+						<defs>
+						    <symbol id="wheel">
+						    	<path d="M5,5 a45,60 0 0,0 270,0" fill="rgba(244, 238, 66)" />
+						    </symbol>
+						</defs>
+
+					<g id="invisibleAll">
+						<g id="battery"  stroke="black" stroke-width="4">
+							<line x1="335" y1="20" x2="335" y2="50"/>
+							<line x1="325" y1="10" x2="325" y2="60"/>
+							<line id="battery22" x1="315" y1="20" x2="315" y2="50"/>
+							<line x1="345" y1="10" x2="345" y2="60"/>
+							<line x1="355" y1="20" x2="355" y2="50"/>
+							<line id="battery2" x1="365" y1="10" x2="365" y2="60"/>
+
+							<text id="batteryM1" x="300" y="80" font-size="20px" stroke="bold" fill="#000000">--</text>
+							<text id="batteryP1" x="360" y="80" font-size="20px" stroke="bold" fill="#000000">+</text>
+
+
+							<text id="batteryM2" x="300" y="80" font-size="20px" stroke="bold" fill="#000000">+</text>
+							<text id="batteryP2" x="360" y="80" font-size="20px" stroke="bold" fill="#000000">--</text>
+						</g>
+
+						<g id="contact" fill="none" stroke-width="4" stroke="black">
+							<!-- ліва труба-->
+							<path d="M 315 40 L 105 40 L 105 400"/>
+							<path d="M 315 30 L 95 30 L 95 400"/>
+
+							<text x="30" y="390" font-size="20px" stroke="none" fill="#000000">Виток</text>
+							<rect x="95" y="400" width="10" height="10" fill="black"/>
+							<rect x="70" y="410" width="60" height="2" fill="black"/>
+
+						
+						<line id="battery2R" x1="357" x2="380" y1="30" y2="30" />
+						<line id="battery2RR" x1="357" x2="380" y1="40" y2="40" />
+						<line id="battery2L" x1="315" x2="325" y1="30" y2="30" />
+						<line id="battery2LL" x1="315" x2="325" y1="40" y2="40" />
+						<path id="fixContactR"  d="M 365 30 L 565 30 L 565 300"/>
+						<path id="fixContactRR" d="M 365 40 L 555 40 L 555 300"/>
+
+
+						<g id="invisible">
+							<path d="M 0 135 L 315 135 L 315 175"/>
+							<path d="M 315 185 L 325 175 L 305 175" fill ="black"/>
+							<circle r="7" cx="317" cy="193"/>
+							<circle r="7" cx="290" cy="193"/>
+							
+							<path d="M 322 193 L 355 193 L 355 365"/>
+							<rect x="350" y="365" width="10" height="10" fill="black"/>
+							<rect x="310" y="375" width="90" height= "20" fill="grey"/>
+							<path d="M 310 390 L 310 415"/>
+							<path d="M 400 390 L 400 415"/>
+
+							<path d="M 0 150 L 290 150 L 290 188"/>
+							<path d="M 290 185 L 300 175 L 280 175" fill ="black"/>
+							<path d="M 105 193 L 285 193"/>
+
+							<circle cx="560" cy="105" r="7"/>
+							<path d="M 568 105 L 580 97 L 580 113" fill="black"/>
+							<path d="M 580 105 L 670 105"/>
+							<circle cx="560" cy="155" r="7"/>
+							<path d="M 568 155 L 580 147 L 580 163" fill="black"/>
+							<path d="M 580 155 L 670 155"/>
+
+						</g>
+						<!-- права труба-->
+							<path d="M 365 30 L 565 30 L 565 100"/>
+							<path d="M 365 40 L 555 40 L 555 100"/>
+							<path d="M 565 160 L 565 400 "/>
+							<path d="M 555 160 L 555 400 "/>
+							<rect x="555" y="400" width="10" height="10" fill="black"/>
+							<rect x="530" y="410" width="60" height="2" fill="black"/>
+							<text x="580" y="390" font-size="20px" stroke="none" fill="#000000">сток</text>
+						</g>
+
+						<g id="providnuck" fill="none" stroke-width="4" stroke="black">
+							<rect x="50" y="416" width="600" height="200" fill="#ce5200" />
+							<use xlink:href="#wheel" x="50" y="410"/>
+							<use xlink:href="#wheel" x="370" y="410"/>
+						</g>
+						<text x="190" y="520" font-size="30px" stroke="bold" fill="#000000">n</text>
+						<text x="520" y="520" font-size="30px" stroke="bold" fill="#000000">n</text>
+						<text x="200" y="510" font-size="25px" stroke="black" fill="#000000">+</text>
+						<text x="530" y="510" font-size="25px" stroke="black" fill="#000000">+</text>
+						<text x="350" y="590" font-size="25px" stroke="black" fill="#000000">p</text>
+					</g>
+
+					
+
+    						<svg id="box1">
+    						</svg>
+					</svg>
+					
+					<div class="ampermetr" id="invizA">
+						<p>Амперметр</p>
+						<p>I<sup>стока</sup>, мкА</p>
+						<p id="outNumber">0</p>
+					</div>
+				</div>
+				<div class="marginBlock" id="container">
+					<p><input type="button" value="1 слайд" onclick="k1()"></p>
+					<p><input type="button" value="2 слайд" onclick="timer2()"></p>
+					<p><input type="button" value="3 слайд" onclick="timer3()"></p> 
+				</div>
+			</div>
+
+			<div class="rightBlock" id="rightBlock">
+				<h3>Опис</h3>
+				<p id="description"></p>
+			</div>
+
+			
+
+		</main>
+		<script type="text/javascript" src="k1.js" ></script>
+		<script type="text/javascript" src="k2.js" ></script>
+		<script type="text/javascript" src="k3.js" ></script>
+	</body>
+</html>

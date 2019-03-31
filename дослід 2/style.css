@@ -1,0 +1,58 @@
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+h2{
+	width: 100%;
+	text-align: center;
+}
+p{margin: 0;
+padding: 0;}
+main{
+	margin-top: 100px;
+}
+
+#leftBlock{
+	margin-left: 30px;
+	display: block;
+	position: relative;
+	float:left;
+
+}
+
+.rightBlock{
+	width: 600px;
+	height: 500px;
+	margin-right: 50px;
+	position: relative;
+	float: right;
+	display: block;
+}
+
+.marginBlock>p{
+	padding: 60px;
+	float: left;
+	position: relative;
+}
+.marginBlock>p:first-child{
+	margin-left: 200px;
+	padding: 60px;
+	position: relative;
+}
+
+
+#termom{
+	width: 200px;
+	height: 200px;
+	display: block;
+	position: relative;
+	float: left;
+}
+
+#description{
+	padding: 5px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+
+}
